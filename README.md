@@ -43,10 +43,13 @@ This example shows how to use the Secrets Manager module to create a secret with
 ```hcl
 module "secrets_manager" {
   source        = "github.com/opstimus/terraform-aws-secret?ref=v<RELEASE>"
-
   project       = "my-project"
   environment   = "dev"
   name          = "db-password"
   secret_string = "random"
+  tags = {
+    Project = <project-name>
+    Environment = <environment-name>
+  }
 }
 ```
