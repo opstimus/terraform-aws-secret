@@ -9,13 +9,13 @@ This Terraform module creates and manages AWS Secrets Manager secrets. It allows
 | Name      | Version   |
 |-----------|-----------|
 | terraform | >= 1.3.0  |
-| aws       | >= 4.0    |
+| aws       | >= 6.0    |
 
 ## Providers
 
 | Name  | Version |
 |-------|---------|
-| aws   | >= 4.0  |
+| aws   | >= 6.0  |
 | random| >= 3.4.0|
 
 ## Inputs
